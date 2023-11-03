@@ -1,0 +1,62 @@
+.mywork{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 20px;
+
+
+
+
+
+.projet{
+    height: 20%;
+    width: 100%;
+    border-bottom: 4px solid white;
+    overflow: hidden;
+    position: relative;
+   
+
+    &_title{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1;
+
+        p{
+            margin:0;
+            padding: 0;
+            position: absolute;
+            top: 50%;
+            right: 50%;
+          
+           
+            
+        }
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+        padding:0 ;
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 1000ms ease-in-out;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        z-index: 3;  
+        
+    
+
+
+        &:hover{
+            opacity: 1;
+
+              
+        }
+
+    }
+}
+}

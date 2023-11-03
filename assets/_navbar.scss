@@ -1,0 +1,39 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 100;
+    
+}
+
+.slogan {
+    color: #fff;
+    font-family:'Titillium Web', sans-serif; 
+    font-size: 2rem;
+
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    text-align: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+/* Style des liens au survol */
+.nav-links a:hover {
+    text-decoration: underline;
+}
