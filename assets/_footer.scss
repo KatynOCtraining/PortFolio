@@ -1,0 +1,49 @@
+footer {
+    background-color: lightgray;
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+h4 {
+    font-size: 1.5rem; /* Taille du titre */
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons li {
+    margin: 0 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #333; /* Couleur par défaut des icônes */
+    font-size: 1.5rem; /* Taille de police par défaut des icônes */
+    transition: color 0.3s, font-size 0.3s; /* Ajoute une transition de couleur et de taille de police */
+}
+
+.social-icons a:hover {
+    font-size: 3rem; /* Augmente la taille de police de l'icône au survol */
+
+    #chess{
+        color:green;
+    }
+    #github{
+        color: purple;
+    }
+    #videogames{
+        color: darkblue;
+    }
+}
+
+

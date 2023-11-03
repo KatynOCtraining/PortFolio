@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
@@ -8,20 +9,19 @@ body {
 }
 
 .navbar {
-  position: sticky;
-  top: 0;
+  position: relative;
   background-color: #333;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  z-index: 100;
 }
 
 .slogan {
   color: #fff;
   font-family: "Titillium Web", sans-serif;
   font-size: 2rem;
+  padding-left: 20px;
+  text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
 }
 
 .nav-links {
@@ -37,12 +37,16 @@ body {
 .nav-links a {
   text-decoration: none;
   color: #fff;
+  padding: 10px;
+  margin: 0px;
+  border-radius: 10px;
   font-size: 1.5rem;
+  transition: background 1s ease-out, color 1s ease-in;
 }
-
-/* Style des liens au survol */
 .nav-links a:hover {
-  text-decoration: underline;
+  color: #131313;
+  background: #e7e5e4;
+  text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
 }
 
 .hero_banner {
@@ -121,7 +125,7 @@ h3 {
   justify-content: space-between;
   z-index: 1;
 }
-.mywork .projet_title p {
+.mywork .projet_anim p {
   margin: 0;
   padding: 0;
   position: absolute;
@@ -138,10 +142,33 @@ h3 {
   transition: opacity 1000ms ease-in-out;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  z-index: 3;
 }
 .mywork .projet img:hover {
   opacity: 1;
+}
+
+.projet_anim {
+  position: relative;
+}
+
+.projet_anim img {
+  width: 100%;
+  height: auto;
+  opacity: 1; /* L'opacité est définie à 1 par défaut pour que l'image soit visible */
+  transition: opacity 0.3s; /* Ajoute une transition en douceur */
+}
+
+.projet_anim:hover img {
+  opacity: 0; /* L'opacité de l'image passe à 0 au survol */
+}
+
+.projet_anim p {
+  opacity: 1; /* Par défaut, le paragraphe est visible */
+  transition: opacity 0.3s; /* Ajoute une transition en douceur */
+}
+
+.projet_anim:hover p {
+  opacity: 0; /* Le paragraphe disparaît au survol de l'image */
 }
 
 @media (max-width: 1024px) {
@@ -166,4 +193,50 @@ h3 {
   .hero_banner h1 {
     margin-top: 0;
   }
+}
+footer {
+  background-color: lightgray;
+  padding: 20px;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+h4 {
+  font-size: 1.5rem; /* Taille du titre */
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons li {
+  margin: 0 10px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: #333; /* Couleur par défaut des icônes */
+  font-size: 1.5rem; /* Taille de police par défaut des icônes */
+  transition: color 0.3s, font-size 0.3s; /* Ajoute une transition de couleur et de taille de police */
+}
+
+.social-icons a:hover {
+  font-size: 3rem; /* Augmente la taille de police de l'icône au survol */
+}
+.social-icons a:hover #chess {
+  color: green;
+}
+.social-icons a:hover #github {
+  color: purple;
+}
+.social-icons a:hover #videogames {
+  color: darkblue;
 }/*# sourceMappingURL=main.css.map */

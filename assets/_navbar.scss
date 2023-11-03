@@ -1,12 +1,11 @@
 .navbar {
-    position: sticky;
-    top: 0;
+    position: relative;
     background-color: #333;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    z-index: 100;
+   
+    
     
 }
 
@@ -14,6 +13,8 @@
     color: #fff;
     font-family:'Titillium Web', sans-serif; 
     font-size: 2rem;
+    padding-left: 20px;
+    text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
 
 }
 
@@ -30,10 +31,22 @@
 .nav-links a {
     text-decoration: none;
     color: #fff;
+    padding: 10px;
+    margin: 0px;
+    border-radius: 10px;
     font-size: 1.5rem;
+    transition: background 1s ease-out, color 1s ease-in;
+    
+
+
+    &:hover{
+        color: #131313;
+        background: #e7e5e4;
+      
+        text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+    }
 }
 
-/* Style des liens au survol */
-.nav-links a:hover {
-    text-decoration: underline;
-}
+
+
+
