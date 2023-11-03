@@ -23,7 +23,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        z-index: 1;
+        
 
      
     }
@@ -36,6 +36,7 @@
             position: absolute;
             top: 50%;
             right: 50%;
+            z-index: -3;
            
         
 
@@ -56,6 +57,7 @@
         transition: opacity 1000ms ease-in-out;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
+        z-index: 2;
     
         
     

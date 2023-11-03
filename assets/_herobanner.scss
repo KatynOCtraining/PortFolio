@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+    position: relative;
 
 
 
@@ -22,11 +23,18 @@
     &_right{
         display: flex;
         flex-direction: column;
-        height: 100%;
-        justify-content: start;
+        max-height: 100%;
+        position: absolute;
+        top: 5%;
+        right: 5%;
         color: white;
         width: 20%;
         font-size: 3vh;
+        background-color: rgba(100, 100, 100, 0.4);
+        padding: 1%;
+        border-radius: 10px;
+        border: 2px solid white;
+        
        
     }
 

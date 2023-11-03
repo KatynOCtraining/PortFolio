@@ -59,6 +59,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+  position: relative;
 }
 .hero_banner_left {
   display: flex;
@@ -70,11 +71,17 @@ body {
 .hero_banner_right {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  justify-content: start;
+  max-height: 100%;
+  position: absolute;
+  top: 5%;
+  right: 5%;
   color: white;
   width: 20%;
   font-size: 3vh;
+  background-color: rgba(100, 100, 100, 0.4);
+  padding: 1%;
+  border-radius: 10px;
+  border: 2px solid white;
 }
 
 .social_btn {
@@ -124,7 +131,6 @@ h3 {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  z-index: 1;
 }
 .mywork .projet_anim p {
   margin: 0;
@@ -132,6 +138,7 @@ h3 {
   position: absolute;
   top: 50%;
   right: 50%;
+  z-index: -3;
 }
 .mywork .projet img {
   height: 100%;
@@ -143,6 +150,7 @@ h3 {
   transition: opacity 1000ms ease-in-out;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  z-index: 2;
 }
 .mywork .projet img:hover {
   opacity: 1;
@@ -173,6 +181,12 @@ h3 {
 }
 
 @media (max-width: 1024px) {
+  h2 {
+    font-size: 5vh;
+  }
+  h3 {
+    font-size: 3vh;
+  }
   .navbar {
     flex-direction: column;
     width: 100%;
@@ -190,6 +204,13 @@ h3 {
   }
   .hero_banner_right {
     width: 100%;
+    position: relative;
+    top: 0;
+    right: 0;
+    justify-content: center;
+  }
+  .hero_banner_left {
+    height: 100px;
   }
   .hero_banner h1 {
     margin-top: 0;
