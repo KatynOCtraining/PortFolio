@@ -9,15 +9,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kay+Pho+Du:wght@400;500;600;700&family=Playfair+Display&family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bb33b41c96.js" crossorigin="anonymous"></script>
+    <script src="./assets/app.js" defer></script>
 </head>
 <body>
     <header>
+
+        <div id="popup-overlay">
+            <div class="pop-up_content">
+                <h2> Ceci est un pop-up</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore iste illum accusantium, totam dolore perferendis assumenda, voluptatem quasi nobis molestiae, libero maxime dignissimos. Accusantium doloremque optio laborum perferendis quaerat animi?</p>
+                 <a href="" class="pop-up_link">pop-up link</a>
+                 <a href="javascript:void(0)" class="pop-up_exit"><i class="fa-solid fa-circle-xmark" onclick="togglePopup()"></i></a>
+            </div>
+        </div>
         <nav class="navbar" class="circle">
             <div class="slogan">mi-homme/mi-code</div>
             <ul class="nav-links">
                 <li><a href="#about">About me</a></li>
                 <li><a href="#mywork">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact" onclick="togglePopup()">Contact</a></li>
             </ul>
         </nav>
     
