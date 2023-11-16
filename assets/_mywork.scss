@@ -1,81 +1,15 @@
-.mywork{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    gap: 20px;
-
-
-
-
-
-.projet{
-    height: 20%;
-    width: 100%;
-    border-bottom: 4px solid white;
-    overflow: hidden;
-    position: relative;
-   
-
-    &_title{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        
-
-     
-    }
-
-
-    &_anim{
-        p{
-            margin:0;
-            padding: 0;
-            position: absolute;
-            top: 50%;
-            right: 50%;
-            z-index: -3;
-           
-        
-
-
-
-          
-           
-            
-        }
-    }
-
-    img {
-        height: 100%;
-        width: 100%;
-        padding:0 ;
-        object-fit: cover;
-        opacity: 0;
-        transition: opacity 1000ms ease-in-out;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-        z-index: 2;
-    
-        
-    
-
-
-        &:hover{
-            opacity: 1;
-
-              
-        }
-
-   
-
-    }
-}
+/* État initial des images et paragraphes dans .projet_anim */
+.projet_anim img, .projet_anim p {
+    opacity: 0; /* Les rendre initialement invisibles */
+    transition: opacity 0.5s ease-in-out; /* Transition douce pour l'opacité */
 }
 
+/* Lorsque la classe 'visible' est ajoutée, changer l'opacité */
+.projet_anim.visible img, .projet_anim.visible p {
+    opacity: 1;
+}
 
+/* Autres styles */
 .projet_anim {
     position: relative;
 }
@@ -83,21 +17,42 @@
 .projet_anim img {
     width: 100%;
     height: auto;
-    opacity: 1; /* L'opacité est définie à 1 par défaut pour que l'image soit visible */
-    transition: opacity 0.3s; /* Ajoute une transition en douceur */
-}
-
-.projet_anim:hover img {
-    opacity: 0; /* L'opacité de l'image passe à 0 au survol */
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    z-index: 2;
 }
 
 .projet_anim p {
-  
-   
-    opacity: 1; /* Par défaut, le paragraphe est visible */
-    transition: opacity 0.3s; /* Ajoute une transition en douceur */
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    z-index: -3;
+    margin: 0;
+    padding: 0;
 }
 
-.projet_anim:hover p {
-    opacity: 0; /* Le paragraphe disparaît au survol de l'image */
+/* Styles pour .projet et autres éléments */
+.projet {
+    height: 20%;
+    width: 100%;
+    border-bottom: 4px solid white;
+    overflow: hidden;
+    position: relative;
+}
+
+.projet_title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mywork {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 200px;
 }
