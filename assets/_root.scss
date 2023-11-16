@@ -5,5 +5,11 @@ body{
     background: black;
     font-family: 'Kay Pho Du', serif;
     color: whitesmoke;
+
+
+    & a {
+        text-decoration: none;
+        color: white;
+        }
 }
 

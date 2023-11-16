@@ -1,0 +1,86 @@
+@mixin slideFromRight {
+    animation: slideFromRight 1.5s ease-out forwards;
+
+    @keyframes slideFromRight {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+}
+
+@mixin rotateIcon {
+    display: inline-block; // Pour permettre la rotation
+    animation: rotateIcon 2s ease-in-out forwards;
+
+    @keyframes rotateIcon {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+}
+
+@mixin slideFromBottom {
+    animation: slideFromBottom 2.5s ease-out forwards;
+
+    @keyframes slideFromBottom {
+        from {
+            transform: translateY(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}
+
+.hero_banner {
+    .hero_banner_left {
+        h1 {
+            @include slideFromRight;
+        }
+
+        .social_btn {
+            i {
+                @include rotateIcon;
+            }
+        }
+    }
+
+    .hero_banner_right {
+        @include slideFromBottom;
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navbar {
+    .nav-links {
+        li {
+            animation: fadeIn 0.5s ease-out forwards;
+            @for $i from 1 through 3 {
+                &:nth-child(#{$i}) {
+                    animation-delay: 0.5s * $i;
+                }
+            }
+        }
+    }
+}

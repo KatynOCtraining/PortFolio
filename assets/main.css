@@ -7,6 +7,10 @@ body {
   font-family: "Kay Pho Du", serif;
   color: whitesmoke;
 }
+body a {
+  text-decoration: none;
+  color: white;
+}
 
 .navbar {
   position: relative;
@@ -158,8 +162,16 @@ h3 {
 .projet_title {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: end;
   justify-content: space-between;
+  gap: 10%;
+}
+.projet_title p {
+  font-size: 3vh;
+  width: 30%;
+}
+.projet_title h3:hover {
+  color: turquoise;
 }
 
 .mywork {
@@ -205,6 +217,9 @@ h3 {
   }
   .hero_banner h1 {
     margin-top: 0;
+  }
+  .projet_title p {
+    font-size: 1vh;
   }
 }
 footer {
@@ -321,4 +336,66 @@ form input {
 form textarea {
   width: 90%;
   height: 4vw;
+}
+
+.hero_banner .hero_banner_left h1 {
+  animation: slideFromRight 1.5s ease-out forwards;
+}
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.hero_banner .hero_banner_left .social_btn i {
+  display: inline-block;
+  animation: rotateIcon 2s ease-in-out forwards;
+}
+@keyframes rotateIcon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.hero_banner .hero_banner_right {
+  animation: slideFromBottom 2.5s ease-out forwards;
+}
+@keyframes slideFromBottom {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.navbar .nav-links li {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+.navbar .nav-links li:nth-child(1) {
+  animation-delay: 0.5s;
+}
+.navbar .nav-links li:nth-child(2) {
+  animation-delay: 1s;
+}
+.navbar .nav-links li:nth-child(3) {
+  animation-delay: 1.5s;
 }/*# sourceMappingURL=main.css.map */

@@ -44,8 +44,23 @@
 .projet_title {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: end;
     justify-content: space-between;
+    gap: 10%;
+    
+
+
+    & p {
+        font-size: 3vh;
+        width: 30%;
+    }
+
+    h3{
+        &:hover{
+            color: turquoise;
+        }
+    }
+    
 }
 
 .mywork {
