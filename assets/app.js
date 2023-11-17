@@ -30,3 +30,15 @@ function observeElements() {
 
 // Attacher les fonctions aux événements correspondants
 document.addEventListener('DOMContentLoaded', observeElements);
+
+
+window.addEventListener('load', function() {
+    // Démarrer l'animation de la barre de chargement
+    const loadingBar = document.querySelector('.loading-bar');
+    loadingBar.style.width = '100%';
+
+    // Masquer le loader après un délai minimal de 2 secondes
+    setTimeout(function() {
+        document.getElementById('loader').style.display = 'none';
+    }, 2000);
+});
