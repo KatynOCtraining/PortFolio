@@ -1,163 +1,185 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Katyn8</title>
-    <link rel="icon" href="./assets/images/Avatar-Profile-PNG-Photos.png">
-    <link rel="stylesheet" href="./assets/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kay+Pho+Du:wght@400;500;600;700&family=Playfair+Display&family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/bb33b41c96.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./assets/images/Avatar-Profile-PNG-Photos.png" />
+    <link rel="stylesheet" href="./assets/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kay+Pho+Du:wght@400;500;600;700&family=Playfair+Display&family=Titillium+Web:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/bb33b41c96.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./assets/app.js" defer></script>
-</head>
-<body>
-    
+  </head>
+  <body>
     <header>
+      <div id="popup-overlay">
+        <div class="pop-up_content">
+          <h4>Contact</h4>
+          <form method="post" action="mailto:decker.thomas2911@gmail.com">
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <input type="submit" value="Envoyer" />
+          </form>
 
-        <div id="popup-overlay">
-            <div class="pop-up_content">
-                <h4> Contact</h4>
-                <form method="post" action="mailto:decker.thomas2911@gmail.com">
-                    <label for="name">Nom</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
-                    <input type="submit" value="Envoyer">
-                </form>
-            
-                 <a href="javascript:void(0)" class="pop-up_exit"><i class="fa-solid fa-circle-xmark" onclick="togglePopup()"></i></a>
-            </div>
+          <a href="javascript:void(0)" class="pop-up_exit"
+            ><i class="fa-solid fa-circle-xmark" onclick="togglePopup()"></i
+          ></a>
         </div>
-        <nav class="navbar" class="circle">
-            <div class="slogan">mi-homme/mi-code</div>
-            <ul class="nav-links">
-                <li><a href="#about">About me</a></li>
-                <li><a href="#mywork">Work</a></li>
-                <li><a href="#contact" onclick="togglePopup()">Contact</a></li>
-            </ul>
-        </nav>
-    
+      </div>
+      <nav class="navbar" class="circle">
+        <div class="slogan">mi-homme/mi-code</div>
+        <ul class="nav-links">
+          <li><a href="#apropos">About me</a></li>
+          <li><a href="#mywork">Work</a></li>
+          <li><a href="#contact" onclick="togglePopup()">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section class="hero_banner">
-          
+      <section class="hero_banner">
+        <div class="hero_banner_left">
+          <h1>KATYN8</h1>
+          <div class="social_btn">
+            <i class="fa-regular fa-envelope"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
 
-            <div class="hero_banner_left"> 
-                 <h1>KATYN8</h1>
-                 <div class="social_btn">
-                    <i class="fa-regular fa-envelope"></i>
-                    <i class="fa-brands fa-github"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
-            </div>
-            
-            <div class="hero_banner_right"> 
-                <span>Disponible pour vos projets de site et application web et mobile. Avec une solide expertise en développement, je suis là pour transformer vos défis en solutions efficaces. Faites équipe avec moi pour concrétiser vos idées et atteindre vos objectifs.</span>
+        <div class="hero_banner_right">
+          <span
+            >Disponible pour vos projets de site et application web et mobile.
+            Avec une solide expertise en développement, je suis là pour
+            transformer vos défis en solutions efficaces. Faites équipe avec moi
+            pour concrétiser vos idées et atteindre vos objectifs.</span
+          >
+        </div>
+      </section>
 
-        
-            </div>
-        </section>
+      <section class="mywork" id="mywork">
+        <h2>My Work</h2>
 
+        <article class="projet">
+          <div class="projet_title">
+            <a href="https://katynd8.github.io/OCtraining/"
+              ><h3>Booki <i class="fa-solid fa-wifi"></i></h3>
+            </a>
+            <p class="projet_txt">
+              - Le site responsive d'une agence de voyage
+            </p>
+          </div>
+          <div class="projet_anim">
+            <img
+              src="./assets/images/booki-modified.png"
+              alt="image de présentation du site de Booki"
+            />
+          </div>
+        </article>
 
-        <section class="mywork" id="mywork">
-            <h2>My Work</h2>
+        <article class="projet">
+          <div class="projet_title">
+            <a href="https://katynoctraining.github.io/Ohmyfood/">
+              <h3>Ohmyfood <i class="fa-solid fa-wifi"></i></h3
+            ></a>
+            <p class="projet_txt">
+              - Le site optimisé mobile d'un uber-eat like
+            </p>
+          </div>
+          <div class="projet_anim">
+            <img
+              src="./assets/images/ohmyfood-modified.png"
+              alt="image de présentation de Ohmyfood"
+            />
+          </div>
+        </article>
 
-           <article class="projet">
-            <div class="projet_title">
-                <a href="https://katynd8.github.io/OCtraining/"><h3>Booki  <i class="fa-solid fa-wifi"></i></h3>  </a>
-                <p class="projet_txt"> - Le site responsive d'une agence de voyage</p>
-             
-               
-            </div>
-            <div class="projet_anim">
-            <img src="./assets/images/booki-modified.png" alt="image de présentation du site de Booki">
-            
-            </div>
-           </article>
+        <article class="projet">
+          <div class="projet_title">
+            <a href="https://katynoctraining.github.io/Print-it2/"
+              ><h3>Print it! <i class="fa-solid fa-wifi"></i></h3
+            ></a>
+            <p class="projet_txt">- Le site animé d'un imprimeur</p>
+          </div>
+          <div class="projet_anim">
+            <img
+              src="./assets/images/printit-modified.png"
+              alt="image de présentation du site de Print-it"
+            />
+          </div>
+        </article>
 
+        <article class="projet">
+          <div class="projet_title">
+            <h3>Les bonnes pièces <i class="fa-solid fa-xmark"></i></h3>
+            <p class="projet_txt">
+              - Un site dynamique de vente de pièces automobiles
+            </p>
+          </div>
+          <div class="projet_anim">
+            <img
+              src="./assets/images/bonnepiece-modified.png"
+              alt="image de présentation du site des bonnes pièces"
+            />
+          </div>
+        </article>
 
+        <article class="projet">
+          <div class="projet_title">
+            <a href="https://katynoctraining.github.io/Pokedex/"
+              ><h3>Pokedex <i class="fa-solid fa-wifi"></i></h3>
+            </a>
+            <p class="projet_txt">- Pokedex interractif via API</p>
+          </div>
+          <div class="projet_anim">
+            <img
+              src="./assets/images/pokedex-modified.png"
+              alt="image de présentation du pokedex"
+            />
+          </div>
+        </article>
+      </section>
 
-           <article class="projet">
-            <div class="projet_title">
-               <a href="https://katynoctraining.github.io/Ohmyfood/"> <h3>Ohmyfood  <i class="fa-solid fa-wifi"></i></h3></a>
-                <p class="projet_txt"> - Le site optimisé mobile d'un uber-eat like
-                  
-                </p>
-            
-                
-            </div>
-            <div class="projet_anim">
-                <img src="./assets/images/ohmyfood-modified.png" alt="image de présentation de Ohmyfood">
-               
-            </div>
-          
-           </article>
-
-
-
-
-           <article class="projet">
-            <div class="projet_title">
-                <a href="https://katynoctraining.github.io/Print-it2/"><h3>Print it!  <i class="fa-solid fa-wifi"></i></h3></a>
-                <p class="projet_txt"> - Le site animé d'un imprimeur</p>
-             
-
-            </div>
-            <div class="projet_anim">
-                <img src="./assets/images/printit-modified.png" alt="image de présentation du site de Print-it">
-            
-            </div>
-         
-           </article>
-
-
-           <article class="projet">
-            <div class="projet_title">
-                <h3>Les bonnes pièces <i class="fa-solid fa-xmark"></i></h3>
-                <p class="projet_txt"> - Un site dynamique de vente de pièces automobiles</p>
-             
-
-            </div>
-            <div class="projet_anim">
-                <img src="./assets/images/bonnepiece-modified.png" alt="image de présentation du site des bonnes pièces">
-            
-            </div>
-         
-           </article>
-
-
-              <article class="projet">
-            <div class="projet_title">
-                <a href="https://katynoctraining.github.io/Pokedex/"><h3>Pokedex  <i class="fa-solid fa-wifi"></i></h3>  </a>
-                <p class="projet_txt"> - Pokedex interractif via API</p>
-             
-               
-            </div>
-            <div class="projet_anim">
-            <img src="./assets/images/pokedex-modified.png" alt="image de présentation du pokedex">
-            
-            </div>
-           </article>
-
-        </section>
-        
-
-        </section>
-        
-        
+      <section class="apropos" id="apropos">
+        <h2>À propos</h2>
+        <span class="apropos_txt"
+          >Lorem ipsum dolor, sit amet consectetur adipisicing elit. A corrupti
+          inventore, adipisci nemo omnis laborum suscipit hic quidem dolores
+          culpa fugiat modi dolor temporibus magni officiis aut dolorem incidunt
+          quaerat. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Itaque et nobis harum vel ipsum nam enim tempore, vitae inventore
+          voluptatum dolore. Explicabo consequatur, inventore culpa laborum
+          soluta nisi repudiandae cupiditate. Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Velit accusamus dolores non. Fugit quod,
+          vel placeat voluptates quaerat fuga obcaecati nobis beatae? Libero
+          culpa minus aliquid provident cumque labore totam.</span
+        >
+      </section>
     </main>
     <footer>
-        <h4>Y'a toujours au moins deux solutions à un problème</h4>
-        <ul class="social-icons">
-            <li><a href="#"><i class="fa-solid fa-chess" id="chess"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-github" id="github"></i></a></li>
-            <li><a href="#"><i class="fa-solid fa-gamepad" id="videogames"></i></a></li>
-        </ul>
+      <h4>Y'a toujours au moins deux solutions à un problème</h4>
+      <ul class="social-icons">
+        <li>
+          <a href="#"><i class="fa-solid fa-chess" id="chess"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-github" id="github"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-gamepad" id="videogames"></i></a>
+        </li>
+      </ul>
     </footer>
-    
-</body>
+  </body>
 </html>

@@ -95,6 +95,18 @@ body a {
   justify-content: space-between;
   padding-bottom: 10px;
 }
+.social_btn :hover {
+  cursor: pointer;
+}
+.social_btn .fa-envelope:hover {
+  color: aqua;
+}
+.social_btn .fa-github:hover {
+  color: purple;
+}
+.social_btn .fa-instagram:hover {
+  color: darkred;
+}
 
 h1 {
   font-family: "Playfair Display", serif;
@@ -398,4 +410,14 @@ form textarea {
 }
 .navbar .nav-links li:nth-child(3) {
   animation-delay: 1.5s;
+}
+
+.apropos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 100px;
 }/*# sourceMappingURL=main.css.map */

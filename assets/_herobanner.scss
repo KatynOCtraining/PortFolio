@@ -1,53 +1,59 @@
-.hero_banner{
+.hero_banner {
+  display: flex;
+  flex-direction: row;
+  height: 75vh;
+  background-image: url("./images/banner_image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  position: relative;
+
+  &_left {
     display: flex;
-    flex-direction: row;
-    height: 75vh;
-    background-image: url("./images/banner_image.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    position: relative;
-
-
-
-    &_left{
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        height: 100%;
-        border-bottom: 4px solid white;
-
-}
-    &_right{
-        display: flex;
-        flex-direction: column;
-        max-height: 100%;
-        position: absolute;
-        top: 5%;
-        right: 5%;
-        color: white;
-        width: 20%;
-        font-size: 3vh;
-        background-color: rgba(100, 100, 100, 0.7);
-        padding: 1%;
-        border-radius: 10px;
-        border: 2px solid white;
-        
-       
-    }
-
+    flex-direction: column;
+    justify-content: end;
+    height: 100%;
+    border-bottom: 4px solid white;
+  }
+  &_right {
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    color: white;
+    width: 20%;
+    font-size: 3vh;
+    background-color: rgba(100, 100, 100, 0.7);
+    padding: 1%;
+    border-radius: 10px;
+    border: 2px solid white;
+  }
 }
 
+.social_btn {
+  font-size: 8vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 10px;
 
+  :hover {
+    cursor: pointer;
+  }
 
-.social_btn{
-   
-    font-size: 8vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-bottom: 10px;
+  .fa-envelope:hover {
+    color: aqua;
+  }
 
+  .fa-github:hover {
+    color: purple;
+  }
+
+  .fa-instagram:hover {
+    color: darkred;
+  }
 }
